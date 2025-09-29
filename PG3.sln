@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ソリューション項目
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-01", "01-01\01-01.vcxproj", "{07CAA19D-1DBC-464C-8F52-B1CF308CA9EF}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-01", "02-01\02-01.vcxproj", "{F680FBEC-7260-4C60-9325-F4E52628C5DC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -36,6 +38,14 @@ Global
 		{07CAA19D-1DBC-464C-8F52-B1CF308CA9EF}.Release|x64.Build.0 = Release|x64
 		{07CAA19D-1DBC-464C-8F52-B1CF308CA9EF}.Release|x86.ActiveCfg = Release|Win32
 		{07CAA19D-1DBC-464C-8F52-B1CF308CA9EF}.Release|x86.Build.0 = Release|Win32
+		{F680FBEC-7260-4C60-9325-F4E52628C5DC}.Debug|x64.ActiveCfg = Debug|x64
+		{F680FBEC-7260-4C60-9325-F4E52628C5DC}.Debug|x64.Build.0 = Debug|x64
+		{F680FBEC-7260-4C60-9325-F4E52628C5DC}.Debug|x86.ActiveCfg = Debug|Win32
+		{F680FBEC-7260-4C60-9325-F4E52628C5DC}.Debug|x86.Build.0 = Debug|Win32
+		{F680FBEC-7260-4C60-9325-F4E52628C5DC}.Release|x64.ActiveCfg = Release|x64
+		{F680FBEC-7260-4C60-9325-F4E52628C5DC}.Release|x64.Build.0 = Release|x64
+		{F680FBEC-7260-4C60-9325-F4E52628C5DC}.Release|x86.ActiveCfg = Release|Win32
+		{F680FBEC-7260-4C60-9325-F4E52628C5DC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
