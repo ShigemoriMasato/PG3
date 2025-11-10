@@ -18,16 +18,6 @@ void DelayReveal(void(*fn)(int, int), unsigned int delayMs, int roll, int userGu
 	fn(roll, userGuess);
 }
 
-void ShowResult(int roll, int userGuess) {
-	std::cout << "出目は" << roll << " です。" << std::endl;
-	char result = roll % 2;
-	if (userGuess == result) {
-		std::cout << "正解" << std::endl;
-	} else {
-		std::cout << "不正解" << std::endl;
-	}
-}
-
 
 int main() {
 	srand(unsigned(time(nullptr)));
@@ -43,7 +33,18 @@ int main() {
 
 	std::cout << "あなたは" << (input == 1 ? "奇数" : "偶数") << "を選びました。" << std::endl;
 
-	DelayReveal(ShowResult, delayMs, (rand() % 6) + 1, input);
+	auto showResult = [](int roll, int userGuess) {
+		std::cout << "出目は" << roll << " です。" << std::endl;
+		char result = roll % 2;
+		if (userGuess == result) {
+			std::cout << "正解" << std::endl;
+		}
+		else {
+			std::cout << "不正解" << std::endl;
+		}
+		};
+
+	DelayReveal(showResult, delayMs, (rand() % 6) + 1, input);
 
 	return 0;
 }
