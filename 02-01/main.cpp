@@ -1,14 +1,7 @@
 #include <stdio.h>
 
-int Min(int a, int b) {
-	return (a < b) ? a : b;
-}
-
-float Min(float a, float b) {
-	return (a < b) ? a : b;
-}
-
-double Min(double a, double b) {
+template <typename T>
+int Min(T a, T b) {
 	return (a < b) ? a : b;
 }
 
